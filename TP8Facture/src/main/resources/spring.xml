@@ -1,0 +1,21 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="Fuct1" class="presentation.FactureControlle">
+    <property name="Service" ref="s1">
+
+    </property>
+</bean>
+
+
+    <bean id="s1" class="service.FactureServiceImpl">
+    <property name="Dao" ref="d1">
+
+    </property>
+    </bean>
+    <bean id="d1" class="dao.FactureDaoImpl"/>
+
+
+
+
+</beans>
